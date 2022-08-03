@@ -61,7 +61,7 @@ input : 75020
 output : 75
 ```
 
-Attention la Corse est un cas particulier :
+Attention la Corse est un cas particulier. Si le code postal commence par 20 :
 ```
 input : <= 20190
 output : 2A
@@ -94,11 +94,11 @@ Nous souhaiterions savoir combien de nos clients vivent par département et trie
 Exemple :
 ```
 input :
-name  , age, zip  , city    , departement
-Cussac, 27 , 75020, Paris   , 75
-Titi  , 35 , 20200, Bastia  , 2B
-Tata  , 40 , 75008, Paris   , 75
-Toto  , 45 , 33120, Arcahcon, 33
+name   , age, zip  , city    , departement
+Cussac , 27 , 75020, Paris   , 75
+Titi   , 35 , 20200, Bastia  , 2B
+Tata   , 40 , 75008, Paris   , 75
+Toto   , 45 , 33120, Arcachon, 33
 
 
 output :

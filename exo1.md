@@ -1,6 +1,6 @@
 # Créer un job Spark
 
-Tout cet exercice va se passer dans le fichier `fr.hymaia.exo1.main.py`
+Tout cet exercice va se passer dans le fichier `src/fr/hymaia/exo1/main.py`
 
 ## SparkSession
 

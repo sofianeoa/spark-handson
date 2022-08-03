@@ -54,7 +54,7 @@ Maintenant, il faut récupérer la fonction Scala en Python. Pour cela, créez l
 ```python
 from pyspark.sql.column import Column, _to_java_column, _to_seq
 
-def addCategoryName(col):
+def add_category_name(col):
     # on récupère le SparkContext
     sc = spark.sparkContext
     # Via sc._jvm on peut accéder à des fonctions Scala
@@ -76,7 +76,7 @@ Créez le fichier `scr.fr.hymaia.exo4.no_udf.py`
 
 Utilisez uniquement des fonctions de Spark pour arriver au même résultat.
 
-Exécutez les 3 jobs et comparez les temps
+Exécutez les 3 jobs avec comme action une écriture en parquet et comparez les temps.
 
 ## Window functions
 
