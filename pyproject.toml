@@ -16,6 +16,7 @@ pytest = "7.1.2"
 
 [tool.poetry.scripts]
 wordcount = "src.fr.hymaia.exo1.main:main"
+exo2 = "src.fr.hymaia.exo2.main:main"
 clean = "src.fr.hymaia.exo2.spark_clean_job:main"
 aggregate = "src.fr.hymaia.exo2.spark_aggregate_job:main"
 python_udf = "src.fr.hymaia.exo4.python_udf:main"
