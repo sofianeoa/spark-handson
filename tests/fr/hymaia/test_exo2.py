@@ -61,6 +61,8 @@ class TestExo2(unittest.TestCase):
 # GIVEN
         input_data = spark.createDataFrame(
             [
+                Row("42"),
+                Row("42"),
                 Row("17"),
                 Row("11"),
                 Row("17"),
@@ -69,17 +71,15 @@ class TestExo2(unittest.TestCase):
                 Row("11"),
                 Row("42"),
                 Row("42"),
-                Row("42"),
-                Row("42"),
                 Row("42")
             ]
         ).toDF("departement")
 # WHEN
         expected_data = spark.createDataFrame(
             [
+                Row("11",2),
                 Row("42",5),
                 Row("17",3),
-                Row("11",2),
                 Row("8",1)
             ]
         ).toDF("departement","count")
@@ -92,19 +92,18 @@ class TestExo2(unittest.TestCase):
 # GIVEN
         input_data_clients = spark.createDataFrame(
             [
-                Row("Cussac", 27 , "75020"),
-                Row("Pierre", 45 , "17540"),
-                Row("Brigite", 35 , "11410"),
+                Row("Michel", 27 , "42800"),
                 Row("Alice", 16 , "75020"),
-                Row("Michel", 27 , "42800")
+                Row("Pierre", 45 , "17540"),
+                Row("Brigite", 35 , "11410")
             ]
         ).toDF("name", "age", "zip")
 
         input_data_city= spark.createDataFrame(
             [
-                Row("75020", "paris"),
-                Row("17540", "ANGLIERS"),
                 Row("11410", "BELFLOU"),
+                Row("17540", "ANGLIERS"),
+                Row("75020", "paris"),
                 Row("42800", "Lyon"),
                 Row("50000", "rien")
             ]
